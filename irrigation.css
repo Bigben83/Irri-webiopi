@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+body	{
+	width: 980px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#range_vertical {
+    -webkit-appearance: slider-vertical;
+     width: 20px;
+     height: 150px;
+    padding: 0px 5px 0px 5px;
+}
+
+input[type=range].range_vertical {
+    -webkit-appearance: slider-vertical;
+    background-color: blue;
+    width: 10px;
+    height:200px;
+}
+
+#range_vertical::-webkit-slider-thumb {
+    -webkit-appearance: sliderthumb-vertical;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+	border-radius: 10px;
+}
+
+input[type="range"] {
+	color: blue;
+	border: initial;
+	margin: 2px;
+}
+
+label {
+	cursor: default;
+	color: green;
+	text-transform: uppercase;
+}
+
+input.vertical {
+	-webkit-appearance: slider-vertical; 
+	width: 50px;
+    background-color: blue;
+}
+
+.fader {
+	-webkit-appearance: sliderthumb-vertical; 
+	width: 20px;
+    height: 20px;
+	border-radius: 10px;
+    background-color: green;
+}
+
+.range-examples	{
+	font-size: 9px;
+}
+
+h3	{
+	font-size: 9px;
+	width: 55px;
+	text-align: center;
+}
+
+#slider	{
+	width: 50px;
+	height: 200px;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	clear: both;
+}
+
