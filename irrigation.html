@@ -5,23 +5,197 @@
 <meta name="viewport" content = "height = device-height, width = 420, user-scalable = no" /> 
 <title>Irrigation Control | Main Screen</title>
 <script type="text/javascript" src="/webiopi.js"></script>
-<script type="text/javascript" src="/ha/security.js"></script>
+<script type="text/javascript" src="/ha/irrigation/js/irrigation.js"></script>
 <link rel="stylesheet" type="text/css" href="/ha/master.css">
+<link rel="stylesheet" type="text/css" href="/ha/irrigation/css/irrigation.css">
 
 </head>
-
 <a id="header-wrap" href="/ha"><h1>Irrigation Control</h1></a>
+<div id="navigation">
+</div>
+</div>
 
-<a class="indexbutton" href="/ha/">Home</a>
-<a class="indexbutton" href="/ha/security.html">Security</a>
-<a class="indexbutton" href="/ha/comfort.html">Comfort</a>
-<a class="indexbutton" href="/ha/settings.html">Settings</a>
+ <div id="header" align="center"></div>
+  <div id="leftside" align="left"></div>
+   <div id="topcontent" align="center"></div>
+    <div id="content" align="center">
+
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time">1min</output>
+<input type="range" min="0" max="60" value="1" class="vertical" id="fader" step="2" oninput="outputUpdate1(value)" list=timesettings>
+
+<label for="fader"><h3>Station 1</h3></label>
+</form>
+
+<datalist id=timesettings>
+<option>0</option>
+<option>10</option>
+<option>20</option>
+<option>30</option>
+<option>40</option>
+<option>50</option>
+<option>60</option>
+</datalist>
+
+<script>
+function outputUpdate1(vol) {
+  document.querySelector('#time').value = vol+"min";
+}
+</script>
 
 </div>
-        <div id="header" align="center"></div>
-        <div id="content" align="center"></div>
-        <div id="macroContent" align="center"></div>
-        <div id="footer" align="center"></div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time2">3min</output>
+<input type="range" min="0" max="60" value="3" class="vertical" id="fader" step="2" oninput="outputUpdate2(value)" list=timesettings>
+
+<label for="fader"><h3>Station 2</h3></label>
+</form>
+
+<script>
+function outputUpdate2(vol) {
+  document.querySelector('#time2').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time3">10min</output>
+<input type="range" min="0" max="60" value="10" class="vertical" id="fader" step="2" oninput="outputUpdate3value)" list=timesettings>
+
+<label for="fader"><h3>Station 3</h3></label>
+</form>
+
+<script>
+function outputUpdate3(vol) {
+  document.querySelector('#time3').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time4">30min</output>
+<input type="range" min="0" max="60" value="30" class="vertical" id="fader" step="2" oninput="outputUpdate4(value)" list=timesettings>
+
+<label for="fader"><h3>Station 4</h3></label>
+</form>
+
+<script>
+function outputUpdate4(vol) {
+  document.querySelector('#time4').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time5">30min</output>
+<input type="range" min="0" max="60" value="30" class="vertical" id="fader" step="2" oninput="outputUpdate5value)" list=timesettings>
+
+<label for="fader"><h3>Station 5</h3></label>
+</form>
+
+<script>
+function outputUpdate5(vol) {
+  document.querySelector('#time5').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time6">30min</output>
+<input type="range" min="0" max="60" value="30" class="vertical" id="fader" step="5" oninput="outputUpdate6(value)" list=timesettings>
+
+<label for="fader"><h3>Station 6</h3></label>
+</form>
+
+<script>
+function outputUpdate6(vol) {
+  document.querySelector('#time6').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time7">30min</output>
+<input type="range" min="0" max="60" value="30" class="vertical" id="fader" step="5" oninput="outputUpdate7value)" list=timesettings>
+
+<label for="fader"><h3>Station 7</h3></label>
+</form>
+
+<script>
+function outputUpdate7(vol) {
+  document.querySelector('#time7').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time8">30min</output>
+<input type="range" min="0" max="60" value="30" class="vertical" id="fader" step="5" oninput="outputUpdate8value)" list=timesettings>
+
+<label for="fader"><h3>Station 8</h3></label>
+</form>
+
+<script>
+function outputUpdate8(vol) {
+  document.querySelector('#time8').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time9">30min</output>
+<input type="range" min="0" max="60" value="30" class="vertical" id="fader" step="5" oninput="outputUpdate9value)" list=timesettings>
+
+<label for="fader"><h3>Station 9</h3></label>
+</form>
+
+
+<script>
+function outputUpdate9(vol) {
+  document.querySelector('#time9').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="time10">60min</output>
+<input type="range" min="0" max="60" value="60" class="vertical" id="fader" step="5" oninput="outputUpdate10(value)" list=timesettings>
+
+<label for="fader"><h3>Station 10</h3></label>
+</form>
+
+<script>
+function outputUpdate10(vol) {
+  document.querySelector('#time10').value = vol+"min";
+}
+</script>
+</div>
+
+<div id="slider">
+<form class="range-examples">
+<output for="fader" id="volume">30min</output>
+<input type="range" min="0" max="60" value="30" class="vertical" id="fader" step="5" oninput="outputUpdate(value)" list=timesettings>
+
+<label for="fader"><h3>Station 3</h3></label>
+</form>
+</div>
+
+    </div>
+   <div id="macroContent" align="center"></div>
+  <div id="rightside" align="right"></div>
+ <div id="footer" align="center"></div>
         
 </body>
 </html>
